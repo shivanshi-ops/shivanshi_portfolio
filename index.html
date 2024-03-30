@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==================================== UNICONS ============================== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- ===================================== SWIPER CSS ============================================== -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    
+    
+    <!-- ============================  CSS ==================================== -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Responsive Porfolio Website</title>
+</head>
+<body>
+    <!-- ================================= HEADER ======================================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Shivanshi</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills    
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase nav__icon"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contactme
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav_close"></i>
+            </div>
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================= MAIN ======================================= -->
+    <main class="main">
+        <!-- ================================== HOME ================================================ -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="www.linkedin.com/in/shivanshi-vyas-24a55023b" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="home__social-icon">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                <image class="home__blob-img" x='12' y='18' xlink:href="profile.jpg"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Shivanshi</h1>
+                        <h3 class="home__subtitle">Frontend developer</h3>
+                        <p class="home__description">High level experience in web design and development 
+                            knowledge, producing quality work.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ ABOUT ===================================== -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">Web developer, with extensive knowledge and 
+                        passion for working in web technologies and UI / UX design, delivering quality work.</p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">Fresher</span>
+                            <span class="about__info-name">Seeking <br> experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">2+</span>
+                            <span class="about__info-name">Completed <br> project</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">No</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="Shivanshi_Vyas_Resume.pdf" class="button button--flex">
+                            Download Resume<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================= SKILLS ========================================= -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills_container container grid">
+                <div>
+                    <!-- ======================================= SKILLS 1 ========================================= -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Web development</h1>
+                                <!-- <span class="skills__subtitle">More than 4 years</span> -->
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ======================================= SKILLS 2 ========================================= -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-programming-language skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Programming Languages</h1>
+                                <!-- <span class="skills__subtitle">More than 4 years</span> -->
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C++</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- ======================================= SKILLS 3 ========================================= -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-database skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Database</h1>
+                                <!-- <span class="skills__subtitle">More than 4 years</span> -->
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__figma"></span>
+                                </div>
+                            </div>
+
+                            <!-- <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">C++</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================================= QUALIFICATION =========================================== -->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <!-- <div class="qualification__button button--flex">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div> -->
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- ========================================= QUALIFICATION CONTENT 1 =========================================== -->
+                    <div class="qualification__content qualification__active" data-content id="eduction">
+                        <!-- ========================================= QUALIFICATION 1 =========================================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Bachelor of Engineering & Technology (B.E / B.Tech)</h3>
+                                <span class="qualification__subtitle">SVIT, Vasad (GTU)</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2022 - 2025
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- ========================================= QUALIFICATION 2 =========================================== -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Diploma in Computer Engineering</h3>
+                                <span class="qualification__subtitle">MSU, Baroda</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019 - 2022
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========================================= QUALIFICATION 3 =========================================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">STD 10 (GSEB)</h3>
+                                <span class="qualification__subtitle">Bright School, Vadodara</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- ========================================= QUALIFICATION 3 =========================================== -->
+                        <!-- <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">STD 10 (GSEB)</h3>
+                                <span class="qualification__subtitle">Bright School, Vadodara</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus perspiciatis corporis tenetur ratione ab? Corporis voluptas adipisci sapiente inventore. Nesciunt laborum incidunt assumenda deleniti, iure dolorum odio maiores laudantium sunt.
+        Accusantium, veritatis nobis autem tempore debitis eligendi cumque, fuga, error quas aspernatur quam dolorum repudiandae sapiente. Quod tempora saepe eveniet laborum aliquid praesentium, inventore natus delectus fuga eos commodi consequatur!
+        Consectetur reiciendis aliquam aspernatur iusto tenetur repellat incidunt ipsum inventore, iste earum quaerat officiis voluptatem voluptatum, laboriosam eaque, aperiam culpa repellendus accusantium non modi et mollitia. Veritatis quos quisquam quia.
+        Laboriosam totam nesciunt sed, dolorum aut hic nobis amet est id ipsa facere nihil iste molestiae veniam cupiditate ducimus praesentium, ea asperiores incidunt optio cumque voluptate omnis maiores. Veniam, quam.
+        Quos explicabo facilis animi quas laboriosam natus sapiente dicta officia magni repudiandae eum voluptatibus, nihil nulla veniam modi, cum harum doloribus voluptas vel. Unde enim reiciendis natus, explicabo saepe hic.
+        Voluptatibus tenetur unde qui impedit accusamus hic dicta fuga nesciunt incidunt labore. Rerum hic error officiis minima veritatis consequatur sequi? Neque praesentium ipsa asperiores, non voluptatem soluta itaque doloremque deleniti?
+        Ea laudantium ex, libero culpa facilis obcaecati maiores ullam consectetur? Molestiae dolorum error illo fugiat beatae molestias nobis, labore vitae. Est, atque. Reiciendis, blanditiis nihil pariatur neque nesciunt quasi dolores.
+        Sapiente libero soluta obcaecati quam ut amet quia ipsa, eum sequi impedit, quidem atque, consectetur in non dolorem officiis repudiandae voluptatem placeat voluptate architecto! Asperiores voluptatum beatae blanditiis neque officiis.
+        Soluta ut quam nobis in corrupti dolore minus ipsum modi non ea velit odit iure dolorem repudiandae, sequi quas qui repellendus molestias, mollitia culpa quis pariatur tempora natus voluptatum. Exercitationem?
+        Perferendis soluta praesentium tempore, nesciunt consequuntur quo aspernatur suscipit nostrum labore aperiam iusto perspiciatis ad, error adipisci? Harum laudantium eius atque ad id, perferendis unde sed? Ut, unde. Minima, laboriosam.
+        Maiores tenetur nostrum sapiente nam facilis nulla, unde laboriosam doloremque quasi ut nobis ducimus pariatur quod sit eligendi reprehenderit mollitia dolorum ratione placeat debitis? A ipsum dolor enim numquam tempore.
+        Alias blanditiis in vel corporis cupiditate laudantium aperiam quam enim recusandae? Error laudantium ratione, reprehenderit velit quidem alias corporis maxime harum numquam impedit tenetur repellendus qui ipsa a optio? Voluptatem!
+        Ab dolore, soluta quidem ipsam aut alias, error aliquid sint odit quos repellat quis? Voluptas, non. Sapiente inventore quis eligendi voluptas architecto officia vero quisquam porro, explicabo modi error culpa!
+        Sit molestias aspernatur incidunt id necessitatibus in assumenda officiis eveniet fugiat autem, optio cumque minus mollitia esse expedita molestiae ab doloremque sequi. Eum eos velit quis aperiam voluptatem libero distinctio?
+        Vitae, iure reiciendis. Blanditiis maxime debitis, neque esse quidem deserunt nihil? Similique necessitatibus possimus dignissimos hic veniam numquam nam ipsam velit, minima eaque vel dolor amet non unde nihil! Autem?
+        Similique officiis facere quia modi ex necessitatibus possimus harum quos, eum earum laborum ad perferendis illum error in aliquid, qui nostrum rerum amet alias id nam architecto pariatur ipsum? Maiores.
+        Dignissimos, culpa, natus minus repellat impedit iure aut quaerat enim facilis magni ducimus odit error, quod quidem ipsa voluptates officiis! Non consequatur, asperiores iure vitae maiores voluptate soluta. Eius, cupiditate?
+        Harum ducimus ullam asperiores deserunt consequuntur eos ut esse eaque, optio tenetur libero iste deleniti? Eligendi ut nostrum explicabo veritatis eos laudantium necessitatibus nobis delectus corrupti? Laborum iure reprehenderit labore.
+        Facere nobis iure recusandae voluptatum. Quia veniam sed, porro, ex ullam saepe aut facilis nostrum nisi quod ut laudantium dicta dolore dolor! Quaerat est adipisci praesentium magni placeat autem reprehenderit!
+        Ullam quisquam commodi, repudiandae fuga a architecto sed atque autem aspernatur corrupti corporis deleniti nesciunt placeat eos blanditiis quidem exercitationem vel aliquid dolores voluptates ducimus fugiat! Provident dolor debitis tempore.
+        Cupiditate at blanditiis quo sapiente nisi perspiciatis ex labore placeat numquam nostrum facere, fuga sint deleniti soluta maxime quia odio laborum enim! Cupiditate eveniet adipisci blanditiis qui reiciendis nostrum tempore.
+        Atque accusamus quibusdam, vero fugit totam voluptatem dolorem! Rem, fugiat illo, repellat cum vero in dolores repudiandae, alias quis cupiditate porro quae! Natus, laudantium omnis fugit ipsa quidem nihil qui.
+        Placeat, cum eligendi nostrum quos accusamus officia atque inventore quas? Sunt, praesentium in. Vero saepe praesentium aliquam corporis officia repudiandae non reprehenderit reiciendis nulla impedit. Officiis quisquam exercitationem eveniet quam?
+        Unde reiciendis fugiat, sit sequi quisquam perspiciatis repellat! Alias sint tenetur eaque perspiciatis, iste pariatur. Non deleniti voluptatem sunt ad placeat voluptates ipsa omnis, molestias sit aperiam, vitae similique! Laudantium.
+        Sed quidem deserunt quam ea, dicta est fugiat architecto suscipit vel rem molestias incidunt illo distinctio natus voluptatibus corrupti animi ut sapiente ullam reiciendis possimus, ab expedita? Explicabo, omnis delectus.
+        Aliquam, quae! Rerum praesentium voluptatum ea eum ad eius at, inventore expedita ratione tempora quo eos voluptatibus, iusto odit, repellat laudantium? Nobis, corrupti aliquid reprehenderit suscipit quos est blanditiis voluptatibus.
+        Numquam quis perferendis delectus veritatis nisi soluta sunt? Sequi, culpa voluptas tempore facilis consequatur, adipisci dolorum excepturi in corporis saepe, laboriosam porro! Sed quos non ad veniam fugit, natus accusantium.
+        Pariatur quasi laboriosam dicta aspernatur aliquid numquam dolor temporibus esse, veniam officia velit commodi dolores minus a, quaerat asperiores explicabo, eos fugit saepe. Asperiores laborum voluptatum, voluptatibus enim vel fugiat.
+        Sit sunt repellat assumenda enim quibusdam, iste nisi illum magni error molestias, impedit corporis dolorum ut laboriosam, veniam quo ducimus tempora doloremque a voluptate rerum nulla in aperiam aliquam. Obcaecati!
+        Odit corrupti magni sapiente laudantium eos ipsa pariatur ea repudiandae! Aut laboriosam velit perferendis quis nostrum dolorum, tempore, exercitationem nihil officiis voluptatibus suscipit ut error fuga, placeat nisi vel veritatis.
+        Illo, incidunt nulla, reprehenderit quam impedit dicta molestias dolor soluta recusandae, cumque provident assumenda nobis perspiciatis! Accusamus aliquam in itaque est autem? Dolore, quaerat nihil! Eaque, totam quo. Repellendus, omnis?
+        Itaque nam aliquam rerum natus reprehenderit deleniti nisi praesentium minima, optio ratione similique! Quisquam perspiciatis velit at doloremque est ratione, consectetur fugiat repellat tempora nihil cum quibusdam ipsum eos quaerat?
+        Impedit dignissimos nam, corporis quam eveniet, a dolore repellat sit praesentium debitis iste molestias iusto sapiente vitae nihil pariatur assumenda ex aperiam. Quae velit placeat ducimus quia, ut architecto error.
+        Vitae hic suscipit voluptatem, minus dolor ipsam quibusdam maxime nisi itaque odio sed ratione eligendi delectus et nulla perspiciatis ipsa rerum nemo ea excepturi commodi nostrum harum magni? Omnis, corrupti!
+        Dicta deserunt minima blanditiis praesentium corrupti voluptatum veritatis dolor accusamus aspernatur? Expedita esse, repudiandae voluptatum quos ut debitis nesciunt at, laboriosam delectus quod maxime optio beatae ducimus architecto eos velit!
+        Molestiae officiis perferendis ad ipsum fugit nostrum, aspernatur voluptates facere sint rem cum quasi illo, eveniet temporibus aliquam sed corrupti hic animi dignissimos modi. Ea deleniti aliquam dolores eaque eligendi.
+        Blanditiis doloribus consectetur, nemo magni eaque quam, earum labore fugiat cumque numquam cupiditate nobis voluptates. Nam exercitationem recusandae reiciendis libero! Ad sapiente quisquam maxime itaque amet explicabo veniam, temporibus voluptatem!
+        Esse magnam maxime vero, voluptatibus quos porro nulla pariatur. Earum debitis veritatis eligendi fugiat inventore accusamus sit maiores ipsum optio id. Accusamus illo aperiam delectus consectetur fugit nesciunt labore mollitia!
+        Fuga similique quasi omnis eaque, ipsam harum aut quia quaerat quod? Distinctio illo quisquam ullam placeat inventore nobis, provident ratione deserunt! Similique nesciunt maxime eius amet incidunt, hic magnam porro.
+        Magni corrupti adipisci in ipsam totam! Incidunt omnis enim et, totam rerum sint maxime quidem quasi, earum voluptates, placeat eum. Nisi magni ea ullam eos adipisci hic doloremque neque. Obcaecati.
+        Fugiat repellendus consequatur cumque? Delectus inventore ipsa sint adipisci fuga id quisquam explicabo qui. Optio provident tempore debitis exercitationem rerum corrupti consectetur minus deleniti architecto, quae laboriosam magni fugit veniam?
+        Eius recusandae, eos consequatur facilis libero ratione, sint voluptate exercitationem quos saepe ad ipsam dolorem sit excepturi assumenda est blanditiis unde voluptatem corporis commodi velit minima? Quas hic eum autem!
+        Eaque tenetur consectetur iusto aliquam rem amet quos totam eius cum ut quia asperiores accusamus fuga, ullam consequatur obcaecati, exercitationem ipsum unde itaque reprehenderit. Tempore, voluptatem illum? Quod, alias porro.
+        Dolore, cumque hic tempore nisi vitae aliquid consectetur fugit repellendus accusamus voluptate iure, modi magnam similique? Eaque aliquam eos alias ex id consequuntur, et sunt voluptates dolor deleniti distinctio quasi.
+        Harum odio velit numquam delectus obcaecati quia corrupti fuga officiis dolorem aliquid minus ab facere veniam et sapiente dolor, fugiat cupiditate? Veniam illo vero quaerat et, nisi asperiores dolor pariatur.
+        Impedit quam qui explicabo eos fugiat cum quos, alias veniam provident, reprehenderit placeat. Blanditiis distinctio neque debitis fugit odit quibusdam, quo aperiam maxime provident, possimus nemo modi? Cupiditate, nihil optio.
+        Officia, voluptatibus, ratione adipisci aperiam velit ipsa rerum magni possimus, deserunt commodi repudiandae suscipit consequuntur recusandae in esse quasi cum consectetur assumenda quia mollitia facere ducimus ipsum sapiente. Doloribus, voluptatem.
+        Dicta accusamus repellendus ducimus, nesciunt delectus atque fuga impedit odit incidunt recusandae dignissimos, eos corrupti deserunt laborum quas esse pariatur exercitationem ea, tempore numquam. Dolor pariatur dicta neque unde. Tempora?
+        Labore repellendus impedit magni sequi alias, culpa quia deleniti officia, vel molestias corrupti quam provident a soluta voluptates temporibus blanditiis enim dolorum placeat! Magnam a quaerat dolor velit, perspiciatis repudiandae!
+        Vero qui reiciendis rerum quos, ab, quo iste blanditiis deserunt possimus eveniet quis iure magnam temporibus rem at autem incidunt odio repellendus tenetur molestias. Vel iure laudantium rem consequatur soluta. -->
+
+
+
+
+
+
+            <!-- ================================== SERVICES ========================================================== -->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I Offer</span>
+
+                <div class="services__container container grid">
+                    <!-- ================================== SERVICES 1 ========================================================== -->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">Ui/Ux <br> Designer</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================== SERVICES 2 ========================================================== -->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow  services__icon"></i>
+                            <h3 class="services__title">Frontend <br> Developer</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================== SERVICES 3 ========================================================== -->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-pen services__icon"></i>
+                            <h3 class="services__title">Branding <br> Designer</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================================== PORTFOLIO ============================================ -->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- =================================================== PORTFOLIO 1 ============================================ -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="portfolio1.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern Website</h3>
+                                <p class="portfolio__description">Website adaptable to all devices, with ui components 
+                                    and animated interactions.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- =================================================== PORTFOLIO 2 ============================================ -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="portfolio2.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Brand Design</h3>
+                                <p class="portfolio__description">Website adaptable to all devices, with ui components 
+                                    and animated interactions.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- =================================================== PORTFOLIO 3 ============================================ -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="portfolio3.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Online Store</h3>
+                                <p class="portfolio__description">Website adaptable to all devices, with ui components 
+                                    and animated interactions.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- ============================ PROJECT IN MIND ========================================== -->
+            <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You have a new project</h2>
+                            <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+
+                        <img src="project.jpg" alt="" class="project__img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================== TESTIMONIAL ============================================== -->
+            <section class="testimonial section">
+                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">My client saying</span>
+
+                <div class="testimonial__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- ============================================== TESTIMONIAL 1 ============================================== -->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="testimonial1.jpg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Sara Smith</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">I get a good impression, I carry
+                                out my project with all the possible quality and attention and
+                                support 24 hours a day
+                            </p>
+                        </div>
+
+                        <!-- ============================================== TESTIMONIAL 2 ============================================== -->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="testimonial2.jpg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Matt Robinson</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">I get a good impression, I carry
+                                out my project with all the possible quality and attention and
+                                support 24 hours a day
+                            </p>
+                        </div>
+
+                        <!-- ============================================== TESTIMONIAL 3 ============================================== -->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="testimonial3.jpg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Raul Harris</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">I get a good impression, I carry
+                                out my project with all the possible quality and attention and
+                                support 24 hours a day
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
+
+            <!-- ===================================== CONTACT ME ========================================== -->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">999-777-666</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">vyasspv@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Baroda, Gujarat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- ========================== FOOTER ================================== -->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Shivanshi</h1>
+                        <span class="footer__subtitle">Frontend developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contactme</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <a href="https://www.twitter.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Shivanshi. All rights reserved</p>
+            </div>
+        </footer>
+    
+        <!-- ======================================== SCROLL TOP ===================================== -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+    
+       <!-- ============================================== SWIPER JS =========================================== -->
+       <script src="swiper-bundle.min.js"></script>
+
+       <!-- ===================================== MAIN JS ============================== -->
+       <script src="main.js"></script>
+       
+   </body>
+   </html>    
+    
+    
+    
+    
+    
+   
+ 
